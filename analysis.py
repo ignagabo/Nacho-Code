@@ -61,6 +61,7 @@ def plotScatterMatrix(df, plotSize, textSize):
         ax[i, j].annotate('Corr. coef = %.3f' % corrs[i, j], (0.8, 0.2), xycoords='axes fraction', ha='center', va='center', size=textSize)
     plt.suptitle('Scatter and Density Plot')
     plt.show()
+  
 
 
 df1 = pd.read_csv('/Users/ignaciogonzalez/Desktop/Big Data Project/movie_metadata.csv', delimiter=',')
